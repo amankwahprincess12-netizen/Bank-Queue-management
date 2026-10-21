@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Queue Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Bank Queue Management System</h1>
+        <p>Welcome! Manage your customer queue easily.</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Add a Customer</h2>
+
+            <form id="customerForm">
+                <label for="customerName">Customer Name</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter customer name"
+                    required
+                >
+                <button type="submit">Add Customer</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Now Serving</h2>
+            <p id="nowServing">No customer is being served.</p>
+            <button id="serveButton" type="button">
+                Serve Next Customer
+            </button>
+        </section>
+
+        <section class="card">
+            <h2>Waiting Customers</h2>
+            <p>Total waiting: <span id="queueCount">0</span></p>
+            <ol id="customerList"></ol>
+            <p id="emptyMessage">No customers are waiting.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Queue Data Structure Project | FIFO Principle</p>
+    </footer>
+
+</body>
+</html>
